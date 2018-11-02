@@ -1,0 +1,28 @@
+{
+    "name": "adrenalads/laradren-ecomm-api",
+    "description": "Commerce APU for products",
+    "license": "MIT",
+    "homepage": "https://github.com/adrenalads/laradren-ecomm-api",
+    "authors": [
+	{
+		"name": "Laradren Ecomm API",
+		"email": "mail@adrenalads.com"
+	}
+    ],
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+    	"php": ">=5.5"
+    },
+    "autoload": {
+      "psr-4": {"Adrenalads\\CommerceApi\\": "src/"}
+   },
+   "scripts": {
+     "pre-install-cmd": [
+       "cp vendor/adrenalads/laradren-ecomm-api/config/commerce.php config/commerce.php"
+     ],
+     "post-update-cmd": [
+       "cp vendor/adrenalads/laradren-ecomm-api/config/commerce.php config/commerce.php"
+     ]
+   }
+}
